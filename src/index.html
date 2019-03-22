@@ -10,39 +10,35 @@
     <header>
       <h2>Currency Converter</h2>
     </header>
-    
-    <form>
-      <div class ="field">
-        <div class ="field-label">
-          <lable>Base</lable>
+    <form class="controls">
+      <div class="field">
+        <div class="field-label">
+          <label>Base</label>
         </div>
-        <div>
+        <div class="field-input">
           <select>
-            <option value ="EUR">EUR</option>
-            <option value ="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
           </select>
         </div>
       </div>
-
-      <div  class ="field">
-        <div class ="field-label">
-          <lable for = "sum">Sum</lable>
+      <div class="field">
+        <div class="field-label">
+          <label for="sum">Sum</label>
         </div>
-        <div class ="filed-input">
-          <input type = "number" id = "sum" name = "sum" value ="1" step ="0.01" min ="0.01"/>
+        <div class="field-input">
+          <input type="number" id="sum" name="sum" value="1" step="0.01" min="0.01" />
         </div>
-        
-        <div id = "currency-indicator">&euro;</div>
+        <div id="currency-indicator">&euro;</div>
       </div>
-      
-      <div  class ="field">
-        <input type ="submit" value = "Convert"/>
+      <div class="field">
+        <input type="submit" value="Convert" />
       </div>
     </form>
-    <div id ="isLoading">Loading...</div>
-    <ul id ="currency-list">
-      <li>Item 1</li>
-      <li>Item 2</li>
+    <div id="isLoading">Loading...</div>
+    <ul id="currency-list">
+      <li><div>EUR</div><div>1000</div></li>
+      <li><div>USD</div><div>1000</div></li>
     </ul>
     <script type="text/javascript" src="/bundle.js"></script>
   </body>
